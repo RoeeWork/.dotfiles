@@ -198,3 +198,6 @@ exec_always --no-startup-id i3-msg 'workspace 3; exec obsidian'
 
 # Keyboard functionallity
 exec_always "localectl --no-convert set-x11-keymap us,il pc104 ,dvorak grp:alt_shift_toggle"
+
+# bind prt screen to flameshot
+bindsym Print exec flameshot gui

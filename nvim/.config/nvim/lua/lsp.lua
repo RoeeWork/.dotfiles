@@ -9,11 +9,11 @@ lspconfig.pyright.setup({
 })
 lspconfig.clangd.setup({
 	cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
-	filetype = {'c', 'cpp'},
-	init_options = {
-	    clangdFileStatus = true,
-		fallbackFlags = { '--std=c99', '-Wall', '-Wextra' },  -- Add other flags if needed
-	},
+	filetype = {'c', 'cpp', 'h'},
+	--init_options = {
+		--fallbackFlags = {'-std=c++20'},  -- Add other flags if needed
+	--},
+	root_dir = require('lspconfig.util').root_pattern(".git"),
 })
 require'lspconfig'.asm_lsp.setup({
 	cmd =  {'asm-lsp'},
