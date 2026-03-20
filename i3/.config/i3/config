@@ -9,11 +9,13 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+include "/home/roee/.dotfiles/i3/.config/i3/startup.conf"
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 10
+font pango:monospace 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -63,10 +65,10 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+h focus left
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -87,7 +89,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+s+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -188,13 +190,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-
-
-# Execute apps on startup
-exec_always --no-startup-id i3-msg 'workspace 1; exec terminator --no-dbus'
-exec_always --no-startup-id i3-msg 'workspace 2; exec firefox'
-exec_always --no-startup-id i3-msg 'workspace 4; exec terminator --no-dbus --working-dir="~/docs"'
-exec_always --no-startup-id i3-msg 'workspace 3; exec obsidian'
 
 # Keyboard functionallity
 exec_always "localectl --no-convert set-x11-keymap us,il pc104 ,dvorak grp:alt_shift_toggle"
