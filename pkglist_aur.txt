@@ -1,0 +1,3 @@
+pet-git
+yay
+yay-debug
