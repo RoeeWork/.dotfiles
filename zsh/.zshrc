@@ -109,10 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 setxkbmap -option caps:swapescape
-source /home/roee/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-eval $(thefuck --alias)
-setxkbmap -option caps:swapescape
-alias cock="/home/roee/docs/scripts/cock.zsh"
 export PATH="/home/roee/docs/rsc/build/rsc:$PATH"
 export PATH="/home/roee/docs/rsc/build:$PATH"
+
+# z support
+. /usr/local/share/z/z.sh
