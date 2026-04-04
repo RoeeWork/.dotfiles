@@ -114,3 +114,5 @@ export PATH="/home/roee/docs/rsc/build:$PATH"
 
 # z support
 . /usr/local/share/z/z.sh
+
+alias updatedotfiles="~/.dotfiles/update.sh"
