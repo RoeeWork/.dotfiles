@@ -1,3 +1,5 @@
+neofetch
 pet-git
+ticktick
 yay
 yay-debug

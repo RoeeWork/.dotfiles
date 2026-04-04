@@ -26,7 +26,9 @@ net-tools
 networkmanager
 ninja
 nmap
+obsidian
 openssh
+pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
