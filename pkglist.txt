@@ -49,6 +49,7 @@ ttf-dejavu
 ttf-fira-code
 unzip
 vim
+vlc
 wget
 wireplumber
 wpa_supplicant

@@ -1,5 +1,6 @@
 neofetch
 pet-git
+spotify
 ticktick
 yay
 yay-debug
