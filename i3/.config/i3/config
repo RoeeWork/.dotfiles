@@ -196,3 +196,4 @@ exec_always "localectl --no-convert set-x11-keymap us,il pc104 ,dvorak grp:alt_s
 
 # bind prt screen to flameshot
 bindsym Print exec flameshot gui
+bindsym XF86AudioPlay exec playerctl play-pause

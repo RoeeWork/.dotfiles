@@ -116,3 +116,4 @@ export PATH="/home/roee/docs/rsc/build:$PATH"
 . /usr/local/share/z/z.sh
 
 alias updatedotfiles="~/.dotfiles/update.sh"
+setxkbmap us,il -option grp:alt_shift_toggle
