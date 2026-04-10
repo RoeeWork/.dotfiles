@@ -24,3 +24,9 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.cmd.colorscheme("vim")
 
+local normal_bg = vim.api.nvim_get_hl_by_name("Normal", true).background
+
+vim.api.nvim_set_hl(0, "NormalFloat", {
+    fg = nil,      -- keep default text color, or set explicitly
+    bg = normal_bg -- match normal background
+})

@@ -2,7 +2,7 @@
 [keybindings]
 [profiles]
   [[default]]
-    font = Monospace 14
+    font = Monospace 24
     use_system_font = False
 [layouts]
   [[default]]

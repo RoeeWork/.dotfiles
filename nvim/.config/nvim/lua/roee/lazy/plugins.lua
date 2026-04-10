@@ -15,4 +15,9 @@ return {
     dependencies = { 'neovim/nvim-lspconfig' },
     opts = {}
   },
+{
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
+}
 }

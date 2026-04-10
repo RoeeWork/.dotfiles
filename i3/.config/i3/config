@@ -9,13 +9,12 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-include "/home/roee/.dotfiles/i3/.config/i3/startup.conf"
 
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 11
+font pango:monospace 14
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -197,3 +196,5 @@ exec_always "localectl --no-convert set-x11-keymap us,il pc104 ,dvorak grp:alt_s
 # bind prt screen to flameshot
 bindsym Print exec flameshot gui
 bindsym XF86AudioPlay exec playerctl play-pause
+
+include "/home/roee/.dotfiles/i3/.config/i3/startup.conf"
